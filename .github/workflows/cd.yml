@@ -35,6 +35,6 @@ jobs:
       - name: Merge branch A into branch B
         run: |
           # Replace the following line with your actual merge command
-          git checkout branch-B
+          git switch branch-B
           git merge branch-A
           git push
