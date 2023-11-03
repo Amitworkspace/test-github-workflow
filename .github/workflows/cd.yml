@@ -33,6 +33,8 @@ jobs:
           echo Hello, world! > amit.txt
 
       - name: Merge branch A into branch B
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
         uses: devmasx/merge-branch@master
         with:
           type: now
