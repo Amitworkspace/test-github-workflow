@@ -36,5 +36,5 @@ jobs:
         run: |
           # Replace the following line with your actual merge command
           git switch branch-B
-          git merge branch-A
-          git push
+          git pull origin branch-A
+    
