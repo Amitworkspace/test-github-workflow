@@ -27,7 +27,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script and add it into amit.txt file
         run: |
-          cd myfolder/
+          cd ${GITHUB_WORKSPACE}/myfolder/
           echo Hello, world! > amit.txt
 
       # Runs a set of commands using the runners shell
