@@ -33,8 +33,9 @@ jobs:
           echo Hello, world! > amit.txt
 
       - name: Merge branch A into branch B
-        run: |
-          # Replace the following line with your actual merge command
-          git switch branch-B
-          git pull origin branch-A
+        uses: devmasx/merge-branch@master
+        with:
+          type: now
+          from_branch: refs/heads/branch-A
+          target_branch: refs/heads/branch-B
     
